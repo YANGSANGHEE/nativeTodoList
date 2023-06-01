@@ -10,6 +10,7 @@ const conn = db.createConnection({
   port: '3306',
   user: 'root',
   password: process.env.password,
+  database: process.env.database,
 });
 
 module.exports = conn;
